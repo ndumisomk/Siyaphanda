@@ -1,0 +1,13 @@
+services:
+  games.api:
+    image: ${DOCKER_REGISTRY-}gamesapi
+    build:
+      context: .
+      dockerfile: Services/Games/Games.API/Dockerfile
+
+  webscrapper.app:
+    image: ${DOCKER_REGISTRY-}webscrapperapp
+    build:
+      context: .
+      dockerfile: Applications/WebScrapperApp/Dockerfile
+

@@ -10,6 +10,16 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Data\Sportingbet_20250125.html" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Data\Sportingbet_20250125.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="HtmlAgilityPack" Version="1.11.72" />
     <PackageReference Include="HtmlAgilityPack.CssSelectors.NetCore" Version="1.2.1" />
     <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.21.0" />

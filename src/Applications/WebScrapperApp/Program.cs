@@ -1,7 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
-using WebScrapperApp;
+using WebScrapperApp.Scrappers;
 
 Console.WriteLine("Hello, World!");
 
-var spp = new SBDataScrapper();
-spp.GetGames(); 
+SportingBet.GetGames(); 
